@@ -2,8 +2,8 @@ from savingsAccount import SavingsAccount
 from checkingAccount import CheckingAccount
 
 #create savings accounts
-s1 = SavingsAccount("Damian", 2000, .03, account_number="1234", routing_number="10000001")
-s2 = SavingsAccount("Tamara", 6000, .05, account_number="4321", routing_number="10000002")
+s1 = SavingsAccount("Damian Kuiper", 2000, .03, account_number="1234", routing_number="10000001")
+s2 = SavingsAccount("Tamara Kuiper", 6000, .05, account_number="4321", routing_number="10000002")
 
 #Apply interest
 s1.apply_interest()
@@ -22,8 +22,8 @@ print("\n")
 
 #Create checking accounts
 
-c1 = CheckingAccount("Sara", 5000, account_number="3333", routing_number="10000003", transfer_limit=10000)
-c2 = CheckingAccount("Anna", 4000, account_number="4444", routing_number="10000004", transfer_limit=500)
+c1 = CheckingAccount("Sara Snegosky", 5000, account_number="3333", routing_number="10000003", transfer_limit=10000)
+c2 = CheckingAccount("Annan Snegosky", 4000, account_number="4444", routing_number="10000004", transfer_limit=500)
 
 print("*** Checking Account Example 1: ***\n")
 
@@ -58,7 +58,7 @@ c2.print_customer_information()
 print("\n")
 
 
-c3 = CheckingAccount("Tessa", 2500, account_number="54321", routing_number="101010101", transfer_limit=100)
+c3 = CheckingAccount("Tessa Kuiper", 2500, account_number="54321", routing_number="101010101", transfer_limit=100)
 c3.print_customer_information()
 c3.deposit(100)
 c3.withdraw(50)
@@ -66,7 +66,7 @@ c3.withdraw(50)
 print("\n")
 print("*** Insufficient funds withdrawal example. ***\n")
 
-s4 = SavingsAccount("Samuel", 10000, interest_rate=.01, account_number="98765", routing_number="101055101")
+s4 = SavingsAccount("Samuel Kuiper", 10000, interest_rate=.01, account_number="98765", routing_number="101055101")
 
 #should trigger insufficient funds validation
 s4.withdraw(10001)
